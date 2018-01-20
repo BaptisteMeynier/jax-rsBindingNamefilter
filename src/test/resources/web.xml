@@ -5,9 +5,22 @@
 	version="2.5">
 	<display-name>Archetype Created Web Application</display-name>
 
-	<context-param>
+    <!-- Allow to automaticaly scan provider -->
+	<!-- context-param>
 		<param-name>resteasy.scan.providers</param-name>
 		<param-value>true</param-value>
+	</context-param-->
+
+	<!-- Is it also possible to define providers split by comma -->
+	<!-- context-param>
+		<param-name>resteasy.providers</param-name>
+		<param-value>org.javaee7.jax.rs.annotedFilter.rest.filter.AuditNeededFilter</param-value>
+	</context-param-->
+
+	<!-- This is the default value -->
+	<context-param>
+		<param-name>resteasy.scan</param-name>
+		<param-value>false</param-value>
 	</context-param>
 
 	<!-- this need same with resteasy servlet url-pattern -->

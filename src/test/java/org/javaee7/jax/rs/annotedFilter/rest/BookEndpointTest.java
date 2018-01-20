@@ -57,7 +57,6 @@ public class BookEndpointTest {
                 .addClasses(BookApplication.class,BookEndpoint.class, Book.class)
                 .addClasses(AuditNeeded.class,AuditNeededFilter.class)
                 .addClasses(LoggerProducer.class)
-                .setWebXML("web.xml")
                 .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml");
     }
 
