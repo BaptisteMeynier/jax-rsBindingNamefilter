@@ -20,11 +20,4 @@ public class BookApplication extends Application{
 	    return s;
 	}
 	
-	@Override
-    public Set<Object> getSingletons() {
-	    Set<Object> s = new HashSet<Object>();
-	   // s.add(AuditNeededFilter.class);
-	    return s;
-    }
-
 }
